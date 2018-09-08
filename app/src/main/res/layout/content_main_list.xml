@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/padding_margin_5dp"
+    android:layout_marginLeft="@dimen/padding_margin_12dp"
+    android:layout_marginRight="@dimen/padding_margin_12dp"
+    android:layout_marginTop="@dimen/padding_margin_5dp">
+
+    <RelativeLayout
+        android:id="@+id/parentPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/lytListHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pad_margin_2dp"
+            android:layout_marginRight="@dimen/pad_margin_2dp"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <com.mcc.alltv.view.PhenomenaTextView
+                android:id="@+id/tvListTitle"
+                android:layout_width="@dimen/height_width_0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_margin="@dimen/padding_margin_5dp"
+                android:layout_weight=".50"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text_size_20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvDataList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytListHeader"
+            android:nestedScrollingEnabled="false" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

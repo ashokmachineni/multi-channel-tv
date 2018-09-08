@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    tools:context="com.mcc.alltv.activity.AboutActivity">
+
+    <!-- set toolbar-->
+    <include layout="@layout/toolbar" />
+
+
+    <RelativeLayout
+        android:layout_width="@dimen/height_width_200dp"
+        android:layout_height="@dimen/height_width_200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/padding_margin_80dp"
+        android:id="@+id/relativeLayout">
+
+        <ImageView
+            android:layout_width="@dimen/height_width_100dp"
+            android:layout_height="@dimen/height_width_100dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/height_width_60dp"
+            android:src="@drawable/ic_splash_logo"
+            android:id="@+id/imageView2" />
+
+    </RelativeLayout>
+
+    <com.mcc.alltv.view.PhenomenaTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/app_name"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18sp"
+        android:id="@+id/phenomenaTextView" />
+
+    <com.mcc.alltv.view.PhenomenaTextView
+        android:id="@+id/tvAppVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/phenomenaTextView"
+        android:layout_centerHorizontal="true"
+        android:text="Version 1.0"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_18sp" />
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<resources>
+
+    <!--Common string-->
+    <string name="app_name">Multi Channel TV</string>
+    <string name="no_data_add"> Your Favorite List is Empty</string>
+    <string name="http">http</string>
+    <string name="no_internet">No internet!</string>
+    <string name="connect">Connect</string>
+    <string name="empty_result">No data!</string>
+
+    <!--Main activity-->
+    <string name="live">Live</string>
+    <string name="home">Home</string>
+
+    <!--Navigation drawer-->
+    <string name="others">MORE</string>
+    <string name="share_app">Share App</string>
+    <string name="rate_app">Rate App</string>
+    <string name="about">About Us </string>
+    <string name="open">Open NvDrawer</string>
+    <string name="close">Close NvDrawer</string>
+    <string name="channel_list">Channel List</string>
+    <string name="favoriteList">Favorite List</string>
+
+    <!--Channel list-->
+    <string name="channel_name">Channel Name</string>
+    <string name="related_channel">Related Channel</string>
+    <string name="share_text">Install best TV application from:</string>
+    <string name="user_admov_id">ca-app-pub-3940256099942544/6300978111</string>
+
+    <!--Exo player-->
+    <string name="buffering">Buffering...</string>
+
+    <!--// about page-->
+    <string name="version">Version: \u0020</string>
+
+    <!-- ad mob credential -->
+    <string name="app_ad_id">ca-app-pub-6382099871444261~9778932425</string>
+    <string name="banner_ad_unit_id">ca-app-pub-6382099871444261/7164732597</string>
+    <string name="interstitial_ad_unit_id">ca-app-pub-6382099871444261/4249427662</string>
+    <string name="fav_activity">fav Activity</string>
+    <string name="font_path">fonts/Phenomena-Bold.otf</string>
+    <string name="channel_list_activity">ChannelList Activity</string>
+    <string name="user_agent">User Agent</string>
+    <string name="channel_data">channel_data</string>
+    <string name="related_channel_list">related_channel_list</string>
+    <string name="app_url">http://play.google.com/store/apps/details?id=com.mcc.alltv</string>
+    <string name="company_name">Powered by MCC Ltd</string>
+</resources>

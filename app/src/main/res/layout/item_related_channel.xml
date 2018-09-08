@@ -1,0 +1,46 @@
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view_related_channel"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:background="@color/colorPrimary"
+    card_view:cardCornerRadius="@dimen/card_album_radius"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/colorPrimary"
+        android:weightSum="1.0">
+
+        <ImageView
+            android:id="@+id/ivRelatedChannelLogo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".80"
+            android:layout_gravity="center_vertical"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:focusable="true"
+            android:gravity="center"
+            android:padding="@dimen/padding_margin_5dp"
+            android:scaleType="centerInside"
+            android:src="@color/imgPlaceHolder" />
+
+        <com.mcc.alltv.view.PhenomenaTextView
+            android:id="@+id/tvRelatedChannelName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".20"
+            android:gravity="center_horizontal"
+            android:layout_below="@+id/ivRelatedChannelLogo"
+            android:paddingLeft="@dimen/padding_margin_5dp"
+            android:paddingRight="@dimen/padding_margin_5dp"
+            android:textColor="@color/white"
+            android:textSize="@dimen/cardview_title_textsize"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

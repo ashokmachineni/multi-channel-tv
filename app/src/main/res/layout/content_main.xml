@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentPanel"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fitsSystemWindows="true"
+    >
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            tools:ignore="UselessParent">
+
+            <!--set view pager-->
+            <include layout="@layout/content_view_pager" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/height_width_20dp"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/pad_margin_2dp"
+                android:padding="@dimen/pad_margin_2dp"
+                android:background="@color/colorPrimary">
+
+                <ImageView
+                    android:layout_width="@dimen/height_width_15dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center"
+                    android:background="@color/colorPrimary"
+                    android:src="@drawable/ic_live" />
+
+                <com.mcc.alltv.view.PhenomenaTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:paddingRight="3dp"
+                    android:layout_gravity="center_vertical"
+                    android:background="@color/colorPrimary"
+                    android:text="@string/live"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+<!--            &lt;!&ndash;set News list&ndash;&gt;
+            <include
+                android:id="@+id/lytNewsTvList"
+                layout="@layout/content_main_list" />
+
+            &lt;!&ndash;set Entertainment list&ndash;&gt;
+            <include
+                android:id="@+id/lytEntertainmentTvList"
+                layout="@layout/content_main_list" />
+
+            &lt;!&ndash;set Sports list&ndash;&gt;
+            <include
+                android:id="@+id/lytSportsTvList"
+                layout="@layout/content_main_list" />
+
+            &lt;!&ndash;set Music list&ndash;&gt;
+            <include
+                android:id="@+id/lytMusicTvList"
+                layout="@layout/content_main_list" />
+
+            &lt;!&ndash;set Islamic list&ndash;&gt;
+            <include
+                android:id="@+id/lytIslamicTvList"
+                layout="@layout/content_main_list" />
+
+            &lt;!&ndash;set Cartoon list&ndash;&gt;
+            <include
+                android:id="@+id/lyCartonTvList"
+                layout="@layout/content_main_list" />-->
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/rvCategoryList"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:nestedScrollingEnabled="false" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
